@@ -1,6 +1,6 @@
 -- fist_strike/player.lua
 -- On-screen messages, plus a test-kit hotkey that only exists when the test
--- plugin (cos_gauntlets_test.esp) is in the load order.
+-- plugin (COSGauntlets.esp) is in the load order.
 --   F8  -> adds the two "Fist of Testing" gauntlets to the inventory
 local ui    = require('openmw.ui')
 local input = require('openmw.input')

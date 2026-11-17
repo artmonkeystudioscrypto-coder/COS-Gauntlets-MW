@@ -127,7 +127,7 @@ local function onFistStrikeLanded(e)
         fired and ' fired' or ' (nothing to fire)'))
 end
 
--- Test kit: give the player the two prototype gauntlets (from cos_gauntlets_test.esp).
+-- Test kit: give the player the two prototype gauntlets (from COSGauntlets.esp).
 local world = require('openmw.world')
 local TEST_ITEMS = { 'cos_fist_gauntlet_l', 'cos_fist_gauntlet_r' }
 local function onGiveTestKit(e)
@@ -138,7 +138,7 @@ local function onGiveTestKit(e)
         if ok and obj then
             obj:moveInto(Actor.inventory(player))
         else
-            log('could not create ' .. id .. ' (is cos_gauntlets_test.esp loaded?)')
+            log('could not create ' .. id .. ' (is COSGauntlets.esp loaded?)')
         end
     end
     player:sendEvent('FistStrike_Message', 'Fist of Testing gauntlets added')
