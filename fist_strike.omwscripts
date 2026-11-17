@@ -1,0 +1,3 @@
+GLOBAL: scripts/fist_strike/global.lua
+NPC,CREATURE,PLAYER: scripts/fist_strike/actor.lua
+PLAYER: scripts/fist_strike/player.lua

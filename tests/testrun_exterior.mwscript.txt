@@ -1,0 +1,2 @@
+set CharGenState to -1
+coc "Seyda Neen"

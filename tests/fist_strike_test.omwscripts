@@ -1,0 +1,2 @@
+GLOBAL: scripts/fist_strike_test/global.lua
+NPC,PLAYER: scripts/fist_strike_test/actor.lua
