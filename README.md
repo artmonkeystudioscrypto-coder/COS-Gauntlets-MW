@@ -22,7 +22,7 @@ that only drain fatigue. NPCs wearing enchanted gauntlets get the same treatment
    ```
    data="<path to this folder>"
    content=fist_strike.omwscripts
-   content=tim_fist_strike_test.esp   # optional: test gauntlets
+   content=COSGauntlets.esp   # optional: test gauntlets
    ```
 3. With the test plugin loaded, press **F8** in game to receive the two *Fist of Testing* gauntlets (Fire Damage 10 on strike). Without the plugin the hotkey does nothing.
    Equip both, put your weapon away, punch something.
@@ -42,7 +42,7 @@ in the enchanting menu is the next planned feature.
 | `scripts/fist_strike/actor.lua` | runs on every actor; catches the engine `Hit` event, filters to successful unarmed melee, forwards to global |
 | `scripts/fist_strike/global.lua` | finds the attacker's gauntlet, applies the enchantment, plays hit VFX/sound, drains charge; hand alternation + balance knobs |
 | `scripts/fist_strike/player.lua` | F8 test-kit hotkey, on-screen messages |
-| `tim_fist_strike_test.esp` | `tim_fist_ench` (Fire Damage 10, touch, cost 10, charge 500) + `tim_fist_gauntlet_l/_r` |
+| `COSGauntlets.esp.esp` | `tim_fist_ench` (Fire Damage 10, touch, cost 10, charge 500) + `tim_fist_gauntlet_l/_r` |
 | `tests/` | headless harness: spawns Fargoth, both actors punch for 20 s, prints charges, quits |
 
 ## Design rules
