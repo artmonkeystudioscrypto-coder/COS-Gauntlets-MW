@@ -24,7 +24,7 @@ that only drain fatigue. NPCs wearing enchanted gauntlets get the same treatment
    content=fist_strike.omwscripts
    content=tim_fist_strike_test.esp   # optional: test gauntlets
    ```
-3. In game, press **F8** to receive the two *Fist of Testing* gauntlets (Fire Damage 10 on strike).
+3. With the test plugin loaded, press **F8** in game to receive the two *Fist of Testing* gauntlets (Fire Damage 10 on strike). Without the plugin the hotkey does nothing.
    Equip both, put your weapon away, punch something.
 
 ## Making your own gauntlets
@@ -51,7 +51,7 @@ in the enchanting menu is the next planned feature.
 - Hands alternate; one cast per punch. `FALLBACK_TO_OTHER_HAND` in `global.lua` (default `false`)
   lets a lone enchanted gauntlet fire every punch instead of every other one.
 - If a weapon is equipped the script does nothing; the engine handles weapon on-strike itself.
-- Set `DEBUG = false` in `global.lua` / `actor.lua` to silence log output.
+- Debug logging is off by default; set `DEBUG = true` in `global.lua` / `actor.lua` to trace every hit and cast in `openmw.log`.
 
 ## Testing (headless)
 

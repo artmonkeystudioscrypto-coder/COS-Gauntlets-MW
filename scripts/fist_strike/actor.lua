@@ -12,7 +12,7 @@ local core  = require('openmw.core')
 local self  = require('openmw.self')
 local types = require('openmw.types')
 
-local DEBUG = true
+local DEBUG = false
 
 local function onHit(attack)
     if DEBUG then

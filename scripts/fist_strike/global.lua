@@ -16,7 +16,7 @@ local types = require('openmw.types')
 local Actor = types.Actor
 local SLOTS = { Actor.EQUIPMENT_SLOT.LeftGauntlet, Actor.EQUIPMENT_SLOT.RightGauntlet }
 
-local DEBUG = true
+local DEBUG = false
 
 -- Balance knobs
 -- If the hand whose turn it is has nothing to fire, let the other hand fire instead.
