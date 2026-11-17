@@ -1,6 +1,6 @@
 -- fist_strike/player.lua
 -- On-screen messages, plus a test-kit hotkey that only exists when the test
--- plugin (tim_fist_strike_test.esp) is in the load order.
+-- plugin (cos_gauntlets_test.esp) is in the load order.
 --   F8  -> adds the two "Fist of Testing" gauntlets to the inventory
 local ui    = require('openmw.ui')
 local input = require('openmw.input')
@@ -8,7 +8,7 @@ local core  = require('openmw.core')
 local self  = require('openmw.self')
 local types = require('openmw.types')
 
-local testKitLoaded = types.Armor.records['tim_fist_gauntlet_l'] ~= nil
+local testKitLoaded = types.Armor.records['cos_fist_gauntlet_l'] ~= nil
 
 return {
     engineHandlers = {

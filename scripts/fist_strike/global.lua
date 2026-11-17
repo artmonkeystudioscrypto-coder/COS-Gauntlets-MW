@@ -127,9 +127,9 @@ local function onFistStrikeLanded(e)
         fired and ' fired' or ' (nothing to fire)'))
 end
 
--- Test kit: give the player the two prototype gauntlets (from tim_fist_strike_test.esp).
+-- Test kit: give the player the two prototype gauntlets (from cos_gauntlets_test.esp).
 local world = require('openmw.world')
-local TEST_ITEMS = { 'tim_fist_gauntlet_l', 'tim_fist_gauntlet_r' }
+local TEST_ITEMS = { 'cos_fist_gauntlet_l', 'cos_fist_gauntlet_r' }
 local function onGiveTestKit(e)
     local player = e.player
     if not player then return end
@@ -138,7 +138,7 @@ local function onGiveTestKit(e)
         if ok and obj then
             obj:moveInto(Actor.inventory(player))
         else
-            log('could not create ' .. id .. ' (is tim_fist_strike_test.esp loaded?)')
+            log('could not create ' .. id .. ' (is cos_gauntlets_test.esp loaded?)')
         end
     end
     player:sendEvent('FistStrike_Message', 'Fist of Testing gauntlets added')

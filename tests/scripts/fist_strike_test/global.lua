@@ -11,7 +11,7 @@ local t0, spawned, quitAt = nil, false, nil
 local dummy
 
 local function equipKit(actor)
-    for _, id in ipairs({ 'tim_fist_gauntlet_l', 'tim_fist_gauntlet_r' }) do
+    for _, id in ipairs({ 'cos_fist_gauntlet_l', 'cos_fist_gauntlet_r' }) do
         local obj = world.createObject(id, 1)
         obj:moveInto(Actor.inventory(actor))
     end

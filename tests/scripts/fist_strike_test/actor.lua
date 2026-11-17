@@ -16,8 +16,8 @@ return {
         end,
         FistTest_Equip = function()
             local eq = types.Actor.getEquipment(self)
-            eq[types.Actor.EQUIPMENT_SLOT.LeftGauntlet]  = 'tim_fist_gauntlet_l'
-            eq[types.Actor.EQUIPMENT_SLOT.RightGauntlet] = 'tim_fist_gauntlet_r'
+            eq[types.Actor.EQUIPMENT_SLOT.LeftGauntlet]  = 'cos_fist_gauntlet_l'
+            eq[types.Actor.EQUIPMENT_SLOT.RightGauntlet] = 'cos_fist_gauntlet_r'
             eq[types.Actor.EQUIPMENT_SLOT.CarriedRight]  = nil
             types.Actor.setEquipment(self, eq)
             print('[FistTest] ' .. self.recordId .. ' equipped test gauntlets')
